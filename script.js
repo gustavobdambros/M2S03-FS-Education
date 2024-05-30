@@ -1,7 +1,6 @@
-// Variável com o array notas
+//[M2S03] Ex. 01 - Projeto LabScore
 let notas = [8.0, 7.5, 6.0, 9.0];
 
-// Função para cálculo de média de notas
 function calcularMedia(notas) {
   let total = 0;
 
@@ -16,7 +15,7 @@ function calcularMedia(notas) {
 let mediaNotas = calcularMedia(notas);
 
 //----------------------------------------------------------------------------
-// Verificar média
+//[M2S03] Ex. 02 - Projeto LabScore
 function verificarMedia(media) {
   if (media > 7) {
     document.write("Parabéns você passou na média!" + "<br>");
@@ -25,23 +24,20 @@ function verificarMedia(media) {
   }
 }
 
-// Chamada da função verificarMedia com a média das notas
 verificarMedia(mediaNotas);
 
 //----------------------------------------------------------------------------
-// Função para nome dos alunos
+//[M2S03] Ex. 03 - Projeto LabScore
 function imprimirNomes(alunos) {
   alunos.forEach((nome) => document.write(nome + "<br>"));
 }
 
-// Array de alunos
 let nomeAlunos = ["João", "Lucas", "Isadora", "Maria", "Ana"];
 
-// Chamando a função para imprimir nomes
 imprimirNomes(nomeAlunos);
 
 //----------------------------------------------------------------------------
-//Tabuada do 8
+//[M2S03] Ex. 04 - Projeto LabScore
 function tabuadaOito() {
   for (let i = 0; i <= 10; i++) {
     let resultado = 8 * i; // Fazendo a multiplicação
@@ -49,11 +45,10 @@ function tabuadaOito() {
   }
 }
 
-// Chamando tabuada do 8
 tabuadaOito();
 
 //----------------------------------------------------------------------------
-// Perguntas ao usuário
+//[M2S03] Ex. 05 - Projeto LabScore
 let nomeAluno = prompt("Qual o nome do aluno?");
 let idadeAluno = prompt("Qual a idade do aluno?");
 let serieAluno = prompt("Qual a série do aluno?");
@@ -78,6 +73,7 @@ if (confirmacao) {
 }
 
 //----------------------------------------------------------------------------
+//[M2S03] Ex. 06 - Projeto LabScore
 // Objeto para armazenar as informações da matéria e suas notas
 let materiaENotas = {};
 
@@ -108,7 +104,7 @@ console.log(materiaENotas);
 console.log("Média das notas:", media);
 
 //----------------------------------------------------------------------------
-// Função para encontrar o maior número
+//[M2S03] Ex. 07 - Projeto LabScore
 function encontrarMaiorNumero(numeros) {
   if (numeros.length === 0) {
     return "O array está vazio.";
@@ -125,7 +121,6 @@ function encontrarMaiorNumero(numeros) {
   return maior;
 }
 
-// Utilizando a função
 let numeros = [10, 5, 8, 20, 15];
 let maiorNumero = encontrarMaiorNumero(numeros);
 console.log("O maior número é:", maiorNumero);
